@@ -2,6 +2,9 @@ function surpreenda() {
     // Obtém a seção HTML onde os resultados serão exibidos
     let section = document.getElementById("resultados-pesquisa");
 
+    // pega o elemento HTML input
+    let input = document.getElementById("campo-pesquisa");
+    
     // Obtém o valor do campo de pesquisa e converte para minúsculas
     let campoPesquisa = document.getElementById("campo-pesquisa").value.toLowerCase();
 
@@ -56,4 +59,5 @@ function surpreenda() {
 
     // Atribui os resultados gerados à seção HTML
     section.innerHTML = resultados;
+    input.value = ""
 }
