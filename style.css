@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Define estilos globais para o documento */
+* {
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove os paddings padrão */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
+    font-family: "Poppins", sans-serif; /* Define a fonte padrão como "Poppins" */
+}
+
+/* Define o estilo do cursor para botões */
+button {
+    cursor: pointer;
+}
+
+/* Define variáveis de cor e estilo */
+:root {
+    --color-branding: #DECD32; /* Define a cor principal da marca */
+}
+
+/* Define o estilo de foco para acessibilidade */
+:focus {
+    outline: 3px solid var(--color-branding);
+}
+
+/* Define o tamanho da fonte base para o documento */
+html {
+    font-size: 62.5%;
+}
+
+/* Define o estilo do corpo do documento */
+body {
+    font-size: 1.6rem; /* Define o tamanho da fonte do corpo do texto */
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr minmax(calc(100vh - 273px), 100vh) 9rem; */
+}
+
+/* Define o estilo do container principal */
+.container {
+    max-width: 116.6rem; /* Define a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+}
+
+/* Define o estilo do cabeçalho */
+nav {
+    background-color: #3D287B; /* Define a cor de fundo do cabeçalho */
+}
+
+/* Define o estilo do container dentro do cabeçalho */
+nav .container {
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço entre os elementos filhos */
+    align-items: center; /* Alinha os elementos filhos verticalmente */
+    padding: 1.6rem 0; /* Adiciona padding superior e inferior */
+}
+
+/* Define o estilo do título principal */
+h1 {
+    font-family: "Jockey One", sans-serif; /* Define a fonte do título */
+    font-size: 4rem; /* Define o tamanho da fonte do título */
+    color: #FFFFFF; /* Define a cor do texto do título */
+}
+
+/* Define o estilo de um trecho específico dentro do título */
+h1 span {
+    color: var(--color-branding); /* Define a cor do texto do trecho */
+}
+
+/* Define o estilo do container de pesquisa */
+nav .search {
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço entre os elementos filhos */
+    align-items: center; /* Alinha os elementos filhos verticalmente */
+    gap: 4rem; /* Define o espaçamento entre os elementos filhos */
+}
+
+/* Define o estilo do campo de entrada de texto */
+nav input {
+    width: 350px; /* Define a largura do campo de entrada */
+    height: 44px; /* Define a altura do campo de entrada */
+    padding: 9px 16px; /* Adiciona padding interno */
+    background: #2A1C55; /* Define a cor de fundo do campo de entrada */
+    border: none; /* Remove a borda do campo de entrada */
+    border-radius: 8px; /* Define o raio da borda do campo de entrada */
+    color: #AAAAAA; /* Define a cor do texto do campo de entrada */
+}
+
+/* Define o estilo do texto de espaço reservado (placeholder) */
+nav input::placeholder {
+    color: #AAAAAA; /* Define a cor do texto de espaço reservado */
+}
+
+/* Define o estilo do container de botões de pesquisa */
+nav .search-btn {
+    display: flex;
+    align-items: center; /* Alinha os elementos filhos verticalmente */
+    gap: 1.2rem; /* Define o espaçamento entre os elementos filhos */
+}
+
+/* Define o estilo dos botões de navegação */
+nav button {
+    font-size: 1.8rem; /* Define o tamanho da fonte do botão */
+    font-weight: 600; /* Define a espessura da fonte do botão */
+    padding: 10px 16px; /* Adiciona padding interno */
+    border-radius: 8px; /* Define o raio da borda do botão */
+}
+
+/* Define o estilo do botão primário */
+nav .btn-primary {
+    background-color: var(--color-branding); /* Define a cor de fundo do botão */
+    border: none; /* Remove a borda do botão */
+}
+
+/* Define o estilo do botão primário ao passar o mouse */
+nav .btn-primary:hover {
+    background-color: #ffe600; /* Define a cor de fundo do botão ao passar o mouse */
+}
+
+/* Define o estilo do botão secundário */
+nav .btn-secondary {
+    background-color: transparent; /* Define o fundo do botão como transparente */
+    border: 1px solid #CCCCCC; /* Define a borda do botão */
+    color: #CCCCCC; /* Define a cor do texto do botão */
+}
+
+/* Define o estilo do botão secundário ao passar o mouse */
+nav .btn-secondary:hover {
+    background-color: rgba(221, 221, 221, 0.30); /* Define a cor de fundo do botão ao passar o mouse */
+    color: #000; /* Define a cor do texto do botão ao passar o mouse */
+}
+
+/* Define o estilo da seção de informações */
+header .info {
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 1.8rem; /* Define o tamanho da fonte do texto */
+    margin: 3.2rem 0; /* Adiciona margem superior e inferior */
+}
+
+/* Define o estilo da seção de conteúdo */
+section .container {
+    display: flex;
+    gap: 6.4rem; /* Define o espaçamento entre os elementos filhos */
+}
+
+/* Define o estilo do container da imagem do pôster */
+section .container .poster {
+    max-width: 27rem; /* Define a largura máxima da imagem */
+    height: 36rem; /* Define a altura da imagem */
+    border-radius: 8px; /* Define o raio da borda da imagem */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o container */
+    margin-bottom: 1.6rem; /* Adiciona margem inferior */
+}
+
+/* Define o estilo do container de informações adicionais */
+section .container .info {
+    display: grid;
+    gap: 4px; /* Define o espaçamento entre os elementos filhos */
+    font-size: 2rem; /* Define o tamanho da fonte do texto */
+}
+
+/* Define o estilo do link dentro do container esquerdo */
+section .container .left a {
+    display: block;
+    width: fit-content; /* Define a largura do link de acordo com o conteúdo */
+    background-color: var(--color-branding); /* Define a cor de fundo do link */
+    color: #000; /* Define a cor do texto do link */
+    border-radius: 8px; /* Define o raio da borda do link */
+    margin-top: 1.6rem; /* Adiciona margem superior */
+    padding: 1rem 1.6rem; /* Adiciona padding interno */
+    text-decoration: none; /* Remove a decoração do link */
+    font-size: 1.8rem; /* Define o tamanho da fonte do link */
+    font-weight: 500; /* Define a espessura da fonte do link */
+}
+
+/* Define o estilo do container direito */
+section .container .right {
+    max-width: 70%; /* Define a largura máxima do container */
+}
+
+/* Define o estilo do título dentro do container direito */
+section .container .right .title {
+    font-size: 3.2rem; /* Define o tamanho da fonte do título */
+    font-weight: 600; /* Define a espessura da fonte do título */
+}
+
+/* Define o estilo do subtítulo dentro do container direito */
+section .container .right .subtitle {
+    font-size: 2.6rem; /* Define o tamanho da fonte do subtítulo */
+    font-weight: 500; /* Define a espessura da fonte do subtítulo */
+    color: #242424; /* Define a cor do texto do subtítulo */
+}
+
+/* Define o estilo da sinopse dentro do container direito */
+section .container .right .sinopse {
+    font-size: 2rem; /* Define o tamanho da fonte da sinopse */
+    font-size: 500; /* Define a espessura da fonte da sinopse */
+    color: #242424; /* Define a cor do texto da sinopse */
+    margin: 1.2rem 0 3.2rem; /* Adiciona margem superior e inferior */
+}
+
+/* Define o estilo do container do trailer dentro do container direito */
+section .container .right .trailer {
+    display: flex;
+    flex-direction: column; /* Define a direção dos elementos filhos como vertical */
+    gap: 1.6rem; /* Define o espaçamento entre os elementos filhos */
+    max-width: 64rem; /* Define a largura máxima do container */
+}
+
+/* Define o estilo do texto em negrito dentro do container do trailer */
+section .container .right .trailer strong {
+    font-size: 2.4rem; /* Define o tamanho da fonte do texto */
+    font-weight: 500; /* Define a espessura da fonte do texto */
+}
+
+/* Define o estilo do container da miniatura do trailer */
+section .container .right .trailer .thumbnail {
+    position: relative;
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o container */
+    display: block;
+    border-radius: 8px; /* Define o raio da borda do container */
+}
+
+/* Define o estilo do pseudo-elemento ::before do container da miniatura */
+section .container .right .trailer .thumbnail::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Define a ordem de empilhamento do elemento */
+    background: rgba(0, 0, 0, 0.30) url(./img/play.svg) no-repeat center center; /* Define a imagem de fundo */
+    width: 100%; /* Define a largura da imagem de fundo */
+    height: 100%; /* Define a altura da imagem de fundo */
+    max-height: 36rem; /* Define a altura máxima da imagem de fundo */
+    border-radius: 8px; /* Define o raio da borda da imagem de fundo */
+    cursor: pointer; /* Define o cursor como ponteiro ao passar o mouse */
+    opacity: 0; /* Define a opacidade inicial como 0 */
+    transition: opacity .5s ease; /* Define a transição da opacidade */
+}
+
+/* Define o estilo do pseudo-elemento ::before do container da miniatura ao passar o mouse */
+section .container .right .trailer .thumbnail:hover::before {
+    opacity: 1; /* Define a opacidade como 1 ao passar o mouse */
+}
+
+/* Define o estilo da imagem dentro do container do trailer */
+section .container .right .trailer img {
+    width: 100%; /* Define a largura da imagem */
+    height: 100%; /* Define a altura da imagem */
+    display: block;
+    object-fit: cover; /* Define o ajuste da imagem ao container */
+}
+
+/* Define o estilo de cada segunda seção */
+section:nth-child(even) {
+    background-color: #DED8EE; /* Define a cor de fundo da seção */
+    padding: 3.2rem 0; /* Adiciona padding superior e inferior */
+    margin: 6.4rem 0; /* Adiciona margem superior e inferior */
+}
+
+/* Define o estilo do rodapé */
+footer {
+    background-color: #133386; /* Define a cor de fundo do rodapé */
+    padding: 3.2rem 0; /* Adiciona padding superior e inferior */
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 1.8rem; /* Define o tamanho da fonte do texto */
+    color: #FFFFFF; /* Define a cor do texto */
+    margin-top: 3.2rem; /* Adiciona margem superior */
+}
+
+/* Define o estilo do aviso */
+.warning {
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 3rem; /* Define o tamanho da fonte do texto */
+    max-width: 72rem; /* Define a largura máxima do aviso */
+    margin: 0 auto; /* Centraliza o aviso horizontalmente */
+}
+
+/* Define estilos responsivos para telas menores que 1200px */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 90%; /* Ajusta a largura máxima do container */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Ajusta o tamanho da fonte do título */
+    }
+
+    nav .search {
+        flex-direction: column; /* Define a direção dos elementos como vertical */
+        align-items: flex-start; /* Alinha os elementos ao início do eixo principal */
+    }
+
+    nav input {
+        margin-bottom: 1rem; /* Adiciona margem inferior */
+    }
+
+    section .container {
+        gap: 2rem; /* Ajusta o espaçamento entre os elementos */
+    }
+
+    section .container .right .title {
+        font-size: 2rem; /* Ajusta o tamanho da fonte do título */
+    }
+
+    section .container .right .subtitle {
+        font-size: 1.8rem; /* Ajusta o tamanho da fonte do subtítulo */
+    }
+}
+
+/* Define estilos responsivos para telas menores que 768px (tablets) */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column; /* Define a direção dos elementos como vertical */
+        align-items: center; /* Centraliza os elementos horizontalmente */
+    }
+
+    nav .search {
+        margin-top: 1rem; /* Adiciona margem superior */
+        width: 100%; /* Define a largura como 100% */
+    }
+}
+
+/* Define estilos responsivos para telas menores que 480px (celulares) */
+@media (max-width: 480px) {
+    :root {
+        font-size: 58%; /* Ajusta o tamanho da fonte base */
+    }
+
+    h1 {
+        font-size: 2rem; /* Ajusta o tamanho da fonte do título */
+    }
+
+    nav button {
+        font-size: 1.4rem; /* Ajusta o tamanho da fonte do botão */
+    }
+
+    section .container {
+        flex-wrap: wrap; /* Permite que os elementos sejam quebrados em várias linhas */
+    }
+
+    section .container .right .title {
+        font-size: 1.8rem; /* Ajusta o tamanho da fonte do título */
+    }
+
+    section .container .right .subtitle {
+        font-size: 1.6rem; /* Ajusta o tamanho da fonte do subtítulo */
+    }
+
+    .warning {
+        font-size: 1.8rem; /* Ajusta o tamanho da fonte do aviso */
+    }
+}
